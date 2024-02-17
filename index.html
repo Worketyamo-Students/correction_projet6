@@ -1,13 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>correction projet6</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="tailwind.config.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montaga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./tailwind.config.js">
+    
+  </script>
+  <link rel="stylesheet" href="./index.css">
 </head>
-<body>
-    <nav cla></nav>
+<body class="font-roboto">
+    <nav class="flex justify-between p-6 w-screen h-20 items-center border-b">
+      <div class="text-2xl font-black">magnifico</div>
+      <div class="flex gap-[2rem]">
+        <div>
+          <label for="products">Products</label>
+          <select name="products" id="products" class="border-0 w-4">
+            <option value=""></option>
+            <option value="chaussures">chaussures</option>
+            <option value="Vetements">vetements</option>
+            <option value="Livre">Livres</option>
+          </select>
+
+        </div>
+        <div>
+          <label for="products">Products</label>
+          <select name="products" id="products" class="border-0 w-4">
+            <option value=""></option>
+            <option value="chaussures">chaussures</option>
+            <option value="Vetements">vetements</option>
+            <option value="Livre">Livres</option>
+          </select>
+
+        </div> 
+        <div>
+          <label for="solutions">solutions</label>
+          <select name="products" id="products" class="border-0 w-4">
+            <option value=""></option>
+            <option value="chaussures">chaussures</option>
+            <option value="Vetements">vetements</option>
+            <option value="Livre">Livres</option>
+          </select>
+
+        </div> 
+        <div>
+          <label for="services">services</label>
+          <select name="products" id="products" class="border-0 w-4">
+            <option value=""></option>
+            <option value="chaussures">chaussures</option>
+            <option value="Vetements">vetements</option>
+            <option value="Livre">Livres</option>
+          </select>
+
+        </div>
+        <div>
+          <label for="help center">help center</label>
+          <select name="products" id="products" class="border-0 w-4">
+            <option value=""></option>
+            <option value="chaussures">chaussures</option>
+            <option value="Vetements">vetements</option>
+            <option value="Livre">Livres</option>
+          </select>
+        </div> 
+        <div><a href="pricing">pricing</a></div>
+      </div>
+      <div class="flex gap-[2rem] items-center">
+        <p class="text-[blue]">Log in</p>
+        <button type="submit" class="bg-blue-600 text-[white]  px-4 py-2 rounded-xl flex items-center gap-[1rem]">Sign up free <img src="./images/Vector.png" alt=""></button>
+      </div>
+    </nav>
+  
 </body>
 </html>
