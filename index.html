@@ -1,77 +1,118 @@
 <!doctype html>
 <html>
+
 <head>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montaga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montaga&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <script src="./tailwind.config.js">
-    
+
   </script>
   <link rel="stylesheet" href="./index.css">
 </head>
+
 <body class="font-roboto">
-    <nav class="flex justify-between p-6 w-screen h-20 items-center border-b">
-      <div class="text-2xl font-black">magnifico</div>
-      <div class="flex gap-[2rem]">
-        <div>
-          <label for="products">Products</label>
-          <select name="products" id="products" class="border-0 w-4">
-            <option value=""></option>
-            <option value="chaussures">chaussures</option>
-            <option value="Vetements">vetements</option>
-            <option value="Livre">Livres</option>
-          </select>
+  <nav class="flex justify-between p-6 w-screen h-20 items-center border-b">
+    <div class="text-2xl font-black">magnifico</div>
+    <div class="lg:flex lg:gap-[2rem] hidden ">
+      <div>
+        <label for="products">Products</label>
+        <select name="products" id="products" class="border-0 w-4">
+          <option value=""></option>
+          <option value="chaussures">chaussures</option>
+          <option value="Vetements">vetements</option>
+          <option value="Livre">Livres</option>
+        </select>
 
-        </div>
-        <div>
-          <label for="products">Products</label>
-          <select name="products" id="products" class="border-0 w-4">
-            <option value=""></option>
-            <option value="chaussures">chaussures</option>
-            <option value="Vetements">vetements</option>
-            <option value="Livre">Livres</option>
-          </select>
-
-        </div> 
-        <div>
-          <label for="solutions">solutions</label>
-          <select name="products" id="products" class="border-0 w-4">
-            <option value=""></option>
-            <option value="chaussures">chaussures</option>
-            <option value="Vetements">vetements</option>
-            <option value="Livre">Livres</option>
-          </select>
-
-        </div> 
-        <div>
-          <label for="services">services</label>
-          <select name="products" id="products" class="border-0 w-4">
-            <option value=""></option>
-            <option value="chaussures">chaussures</option>
-            <option value="Vetements">vetements</option>
-            <option value="Livre">Livres</option>
-          </select>
-
-        </div>
-        <div>
-          <label for="help center">help center</label>
-          <select name="products" id="products" class="border-0 w-4">
-            <option value=""></option>
-            <option value="chaussures">chaussures</option>
-            <option value="Vetements">vetements</option>
-            <option value="Livre">Livres</option>
-          </select>
-        </div> 
-        <div><a href="pricing">pricing</a></div>
       </div>
-      <div class="flex gap-[2rem] items-center">
-        <p class="text-[blue]">Log in</p>
-        <button type="submit" class="bg-blue-600 text-[white]  px-4 py-2 rounded-xl flex items-center gap-[1rem]">Sign up free <img src="./images/Vector.png" alt=""></button>
+      <div>
+        <label for="products">Products</label>
+        <select name="products" id="products" class="border-0 w-4">
+          <option value=""></option>
+          <option value="chaussures">chaussures</option>
+          <option value="Vetements">vetements</option>
+          <option value="Livre">Livres</option>
+        </select>
+
       </div>
-    </nav>
-  
+      <div>
+        <label for="solutions">solutions</label>
+        <select name="products" id="products" class="border-0 w-4">
+          <option value=""></option>
+          <option value="chaussures">chaussures</option>
+          <option value="Vetements">vetements</option>
+          <option value="Livre">Livres</option>
+        </select>
+
+      </div>
+      <div>
+        <label for="services">services</label>
+        <select name="products" id="products" class="border-0 w-4">
+          <option value=""></option>
+          <option value="chaussures">chaussures</option>
+          <option value="Vetements">vetements</option>
+          <option value="Livre">Livres</option>
+        </select>
+
+      </div>
+      <div>
+        <label for="help center">help center</label>
+        <select name="products" id="products" class="border-0 w-4">
+          <option value=""></option>
+          <option value="chaussures">chaussures</option>
+          <option value="Vetements">vetements</option>
+          <option value="Livre">Livres</option>
+        </select>
+      </div>
+      <div><a href="pricing">pricing</a></div>
+    </div>
+    <div class="lg:flex lg:gap-[2rem] items-center hidden ">
+      <p class="text-[blue]">Log in</p>
+
+      <button type="submit" class="bg-blue-600 text-[white]  px-4 py-2 rounded-xl flex items-center gap-[1rem]">Sign up
+        free <img src="./images/Vector.png" alt=""></button>
+    </div>
+    <span class="material-symbols-outlined lg:hidden">
+      menu
+    </span>
+  </nav>
+  <section class="flex w-full h-[60rem] p-[2rem] gap-[2rem] lg:p-[8rem] lg:gap-[8rem] flex-col lg:flex-row ">
+    <div class="flex-1 h-full w-full flex flex-col gap-4 justify-evenly">
+      <h1 class="lg:text-[7.2rem] lg:block font-bold text-[4rem] hidden">Team projects, done well</h1>
+      <h1 class="lg:text-[7.2rem] block lg:hidden font-bold text-[4rem] ">Teach students worldwide</h1>
+      <p class="text-[1.8rem]">The only platform that gives your team all the tools needed to work together on their
+        awesome projects</p>
+      <div class="flex gap-3">
+        <div class="w-full h-full border-2 flex gap-3 p-2">
+          <span class="material-symbols-outlined text-gray-200">
+            mail
+          </span>
+          <input type="email" placeholder="Enter work email" class="text-[1.5rem] ">
+        </div>
+        <button class="bg-blue-600 text-[white] text-[1.5rem]  px-4 py-2 rounded-xl flex items-center gap-[1rem] text-nowrap">Sign Up
+          Free<span class="material-symbols-outlined">
+            arrow_right_alt
+          </span></button>
+      </div>
+      <div class="bg-[#F1F5F9] w-full flex gap-6 p-2 flex-wrap justify-around">
+        <img src="./images/Logo-grey-1.png" alt="">
+        <img src="./images/Logo-grey-2.png" alt="">
+        <img src="./images/Logo-grey-3.png" alt="">
+        <img src="./images/Logo-grey-4.png" alt="">
+      </div>
+    </div>
+    <div class="flex-1">
+      <img src="/images/business.png" alt="" class="h-full w-full">
+    </div>
+    
+  </section>
 </body>
+
 </html>
